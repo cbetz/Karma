@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D939FB321F8C23100EEACAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FB221F8C23100EEACAA /* AppDelegate.swift */; };
+		3D939FB521F8C23100EEACAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FB421F8C23100EEACAA /* ViewController.swift */; };
+		3D939FB821F8C23100EEACAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FB621F8C23100EEACAA /* Main.storyboard */; };
+		3D939FBA21F8C23300EEACAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FB921F8C23300EEACAA /* Assets.xcassets */; };
+		3D939FBD21F8C23300EEACAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FBB21F8C23300EEACAA /* LaunchScreen.storyboard */; };
+		3D939FC821F8C23300EEACAA /* KarmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FC721F8C23300EEACAA /* KarmaTests.swift */; };
+		3D939FD321F8C23300EEACAA /* KarmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FD221F8C23300EEACAA /* KarmaUITests.swift */; };
+		3D939FD821F8C23300EEACAA /* Karma WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3D939FD721F8C23300EEACAA /* Karma WatchKit App.app */; };
+		3D939FDE21F8C23300EEACAA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FDC21F8C23300EEACAA /* Interface.storyboard */; };
+		3D939FE021F8C23400EEACAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FDF21F8C23400EEACAA /* Assets.xcassets */; };
+		3D939FE721F8C23400EEACAA /* Karma WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3D939FE621F8C23400EEACAA /* Karma WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D939FEC21F8C23400EEACAA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FEB21F8C23400EEACAA /* InterfaceController.swift */; };
+		3D939FEE21F8C23400EEACAA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FED21F8C23400EEACAA /* ExtensionDelegate.swift */; };
+		3D939FF021F8C23400EEACAA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FEF21F8C23400EEACAA /* NotificationController.swift */; };
+		3D939FF221F8C23400EEACAA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FF121F8C23400EEACAA /* ComplicationController.swift */; };
+		3D939FF421F8C23400EEACAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FF321F8C23400EEACAA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D939FC421F8C23300EEACAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D939FA721F8C23000EEACAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D939FAE21F8C23000EEACAA;
+			remoteInfo = Karma;
+		};
+		3D939FCF21F8C23300EEACAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D939FA721F8C23000EEACAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D939FAE21F8C23000EEACAA;
+			remoteInfo = Karma;
+		};
+		3D939FD921F8C23300EEACAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D939FA721F8C23000EEACAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D939FD621F8C23300EEACAA;
+			remoteInfo = "Karma WatchKit App";
+		};
+		3D939FE821F8C23400EEACAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D939FA721F8C23000EEACAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D939FE521F8C23400EEACAA;
+			remoteInfo = "Karma WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D939FFC21F8C23400EEACAA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D939FE721F8C23400EEACAA /* Karma WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D93A00021F8C23400EEACAA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3D939FD821F8C23300EEACAA /* Karma WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D939FAF21F8C23100EEACAA /* Karma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D939FB221F8C23100EEACAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D939FB421F8C23100EEACAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D939FB721F8C23100EEACAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D939FB921F8C23300EEACAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D939FBC21F8C23300EEACAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D939FBE21F8C23300EEACAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D939FC321F8C23300EEACAA /* KarmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D939FC721F8C23300EEACAA /* KarmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaTests.swift; sourceTree = "<group>"; };
+		3D939FC921F8C23300EEACAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D939FCE21F8C23300EEACAA /* KarmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D939FD221F8C23300EEACAA /* KarmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaUITests.swift; sourceTree = "<group>"; };
+		3D939FD421F8C23300EEACAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D939FD721F8C23300EEACAA /* Karma WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Karma WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D939FDD21F8C23300EEACAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3D939FDF21F8C23400EEACAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D939FE121F8C23400EEACAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D939FE621F8C23400EEACAA /* Karma WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Karma WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D939FEB21F8C23400EEACAA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3D939FED21F8C23400EEACAA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3D939FEF21F8C23400EEACAA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3D939FF121F8C23400EEACAA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3D939FF321F8C23400EEACAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D939FF521F8C23400EEACAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D939FF621F8C23400EEACAA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D939FAC21F8C23000EEACAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FC021F8C23300EEACAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FCB21F8C23300EEACAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FE321F8C23400EEACAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D939FA621F8C23000EEACAA = {
+			isa = PBXGroup;
+			children = (
+				3D939FB121F8C23100EEACAA /* Karma */,
+				3D939FC621F8C23300EEACAA /* KarmaTests */,
+				3D939FD121F8C23300EEACAA /* KarmaUITests */,
+				3D939FDB21F8C23300EEACAA /* Karma WatchKit App */,
+				3D939FEA21F8C23400EEACAA /* Karma WatchKit Extension */,
+				3D939FB021F8C23100EEACAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D939FB021F8C23100EEACAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D939FAF21F8C23100EEACAA /* Karma.app */,
+				3D939FC321F8C23300EEACAA /* KarmaTests.xctest */,
+				3D939FCE21F8C23300EEACAA /* KarmaUITests.xctest */,
+				3D939FD721F8C23300EEACAA /* Karma WatchKit App.app */,
+				3D939FE621F8C23400EEACAA /* Karma WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D939FB121F8C23100EEACAA /* Karma */ = {
+			isa = PBXGroup;
+			children = (
+				3D939FB221F8C23100EEACAA /* AppDelegate.swift */,
+				3D939FB421F8C23100EEACAA /* ViewController.swift */,
+				3D939FB621F8C23100EEACAA /* Main.storyboard */,
+				3D939FB921F8C23300EEACAA /* Assets.xcassets */,
+				3D939FBB21F8C23300EEACAA /* LaunchScreen.storyboard */,
+				3D939FBE21F8C23300EEACAA /* Info.plist */,
+			);
+			path = Karma;
+			sourceTree = "<group>";
+		};
+		3D939FC621F8C23300EEACAA /* KarmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D939FC721F8C23300EEACAA /* KarmaTests.swift */,
+				3D939FC921F8C23300EEACAA /* Info.plist */,
+			);
+			path = KarmaTests;
+			sourceTree = "<group>";
+		};
+		3D939FD121F8C23300EEACAA /* KarmaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D939FD221F8C23300EEACAA /* KarmaUITests.swift */,
+				3D939FD421F8C23300EEACAA /* Info.plist */,
+			);
+			path = KarmaUITests;
+			sourceTree = "<group>";
+		};
+		3D939FDB21F8C23300EEACAA /* Karma WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3D939FDC21F8C23300EEACAA /* Interface.storyboard */,
+				3D939FDF21F8C23400EEACAA /* Assets.xcassets */,
+				3D939FE121F8C23400EEACAA /* Info.plist */,
+			);
+			path = "Karma WatchKit App";
+			sourceTree = "<group>";
+		};
+		3D939FEA21F8C23400EEACAA /* Karma WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D939FEB21F8C23400EEACAA /* InterfaceController.swift */,
+				3D939FED21F8C23400EEACAA /* ExtensionDelegate.swift */,
+				3D939FEF21F8C23400EEACAA /* NotificationController.swift */,
+				3D939FF121F8C23400EEACAA /* ComplicationController.swift */,
+				3D939FF321F8C23400EEACAA /* Assets.xcassets */,
+				3D939FF521F8C23400EEACAA /* Info.plist */,
+				3D939FF621F8C23400EEACAA /* PushNotificationPayload.apns */,
+			);
+			path = "Karma WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D939FAE21F8C23000EEACAA /* Karma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D93A00121F8C23400EEACAA /* Build configuration list for PBXNativeTarget "Karma" */;
+			buildPhases = (
+				3D939FAB21F8C23000EEACAA /* Sources */,
+				3D939FAC21F8C23000EEACAA /* Frameworks */,
+				3D939FAD21F8C23000EEACAA /* Resources */,
+				3D93A00021F8C23400EEACAA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D939FDA21F8C23300EEACAA /* PBXTargetDependency */,
+			);
+			name = Karma;
+			productName = Karma;
+			productReference = 3D939FAF21F8C23100EEACAA /* Karma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D939FC221F8C23300EEACAA /* KarmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D93A00421F8C23400EEACAA /* Build configuration list for PBXNativeTarget "KarmaTests" */;
+			buildPhases = (
+				3D939FBF21F8C23300EEACAA /* Sources */,
+				3D939FC021F8C23300EEACAA /* Frameworks */,
+				3D939FC121F8C23300EEACAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D939FC521F8C23300EEACAA /* PBXTargetDependency */,
+			);
+			name = KarmaTests;
+			productName = KarmaTests;
+			productReference = 3D939FC321F8C23300EEACAA /* KarmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D939FCD21F8C23300EEACAA /* KarmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D93A00721F8C23400EEACAA /* Build configuration list for PBXNativeTarget "KarmaUITests" */;
+			buildPhases = (
+				3D939FCA21F8C23300EEACAA /* Sources */,
+				3D939FCB21F8C23300EEACAA /* Frameworks */,
+				3D939FCC21F8C23300EEACAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D939FD021F8C23300EEACAA /* PBXTargetDependency */,
+			);
+			name = KarmaUITests;
+			productName = KarmaUITests;
+			productReference = 3D939FCE21F8C23300EEACAA /* KarmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3D939FD621F8C23300EEACAA /* Karma WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D939FFD21F8C23400EEACAA /* Build configuration list for PBXNativeTarget "Karma WatchKit App" */;
+			buildPhases = (
+				3D939FD521F8C23300EEACAA /* Resources */,
+				3D939FFC21F8C23400EEACAA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D939FE921F8C23400EEACAA /* PBXTargetDependency */,
+			);
+			name = "Karma WatchKit App";
+			productName = "Karma WatchKit App";
+			productReference = 3D939FD721F8C23300EEACAA /* Karma WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3D939FE521F8C23400EEACAA /* Karma WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D939FF921F8C23400EEACAA /* Build configuration list for PBXNativeTarget "Karma WatchKit Extension" */;
+			buildPhases = (
+				3D939FE221F8C23400EEACAA /* Sources */,
+				3D939FE321F8C23400EEACAA /* Frameworks */,
+				3D939FE421F8C23400EEACAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Karma WatchKit Extension";
+			productName = "Karma WatchKit Extension";
+			productReference = 3D939FE621F8C23400EEACAA /* Karma WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D939FA721F8C23000EEACAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Betz Software LLC";
+				TargetAttributes = {
+					3D939FAE21F8C23000EEACAA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3D939FC221F8C23300EEACAA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3D939FAE21F8C23000EEACAA;
+					};
+					3D939FCD21F8C23300EEACAA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3D939FAE21F8C23000EEACAA;
+					};
+					3D939FD621F8C23300EEACAA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3D939FE521F8C23400EEACAA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D939FAA21F8C23000EEACAA /* Build configuration list for PBXProject "Karma" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D939FA621F8C23000EEACAA;
+			productRefGroup = 3D939FB021F8C23100EEACAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D939FAE21F8C23000EEACAA /* Karma */,
+				3D939FC221F8C23300EEACAA /* KarmaTests */,
+				3D939FCD21F8C23300EEACAA /* KarmaUITests */,
+				3D939FD621F8C23300EEACAA /* Karma WatchKit App */,
+				3D939FE521F8C23400EEACAA /* Karma WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D939FAD21F8C23000EEACAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FBD21F8C23300EEACAA /* LaunchScreen.storyboard in Resources */,
+				3D939FBA21F8C23300EEACAA /* Assets.xcassets in Resources */,
+				3D939FB821F8C23100EEACAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FC121F8C23300EEACAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FCC21F8C23300EEACAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FD521F8C23300EEACAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FE021F8C23400EEACAA /* Assets.xcassets in Resources */,
+				3D939FDE21F8C23300EEACAA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FE421F8C23400EEACAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FF421F8C23400EEACAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D939FAB21F8C23000EEACAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FB521F8C23100EEACAA /* ViewController.swift in Sources */,
+				3D939FB321F8C23100EEACAA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FBF21F8C23300EEACAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FC821F8C23300EEACAA /* KarmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FCA21F8C23300EEACAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FD321F8C23300EEACAA /* KarmaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D939FE221F8C23400EEACAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D939FF021F8C23400EEACAA /* NotificationController.swift in Sources */,
+				3D939FF221F8C23400EEACAA /* ComplicationController.swift in Sources */,
+				3D939FEE21F8C23400EEACAA /* ExtensionDelegate.swift in Sources */,
+				3D939FEC21F8C23400EEACAA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D939FC521F8C23300EEACAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D939FAE21F8C23000EEACAA /* Karma */;
+			targetProxy = 3D939FC421F8C23300EEACAA /* PBXContainerItemProxy */;
+		};
+		3D939FD021F8C23300EEACAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D939FAE21F8C23000EEACAA /* Karma */;
+			targetProxy = 3D939FCF21F8C23300EEACAA /* PBXContainerItemProxy */;
+		};
+		3D939FDA21F8C23300EEACAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D939FD621F8C23300EEACAA /* Karma WatchKit App */;
+			targetProxy = 3D939FD921F8C23300EEACAA /* PBXContainerItemProxy */;
+		};
+		3D939FE921F8C23400EEACAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D939FE521F8C23400EEACAA /* Karma WatchKit Extension */;
+			targetProxy = 3D939FE821F8C23400EEACAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D939FB621F8C23100EEACAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D939FB721F8C23100EEACAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D939FBB21F8C23300EEACAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D939FBC21F8C23300EEACAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D939FDC21F8C23300EEACAA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D939FDD21F8C23300EEACAA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D939FF721F8C23400EEACAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D939FF821F8C23400EEACAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D939FFA21F8C23400EEACAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = "Karma WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.Karma.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		3D939FFB21F8C23400EEACAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = "Karma WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.Karma.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		3D939FFE21F8C23400EEACAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				IBSC_MODULE = Karma_WatchKit_Extension;
+				INFOPLIST_FILE = "Karma WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.Karma.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		3D939FFF21F8C23400EEACAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				IBSC_MODULE = Karma_WatchKit_Extension;
+				INFOPLIST_FILE = "Karma WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.Karma.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		3D93A00221F8C23400EEACAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = Karma/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.Karma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D93A00321F8C23400EEACAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = Karma/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.Karma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D93A00521F8C23400EEACAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = KarmaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.KarmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Karma.app/Karma";
+			};
+			name = Debug;
+		};
+		3D93A00621F8C23400EEACAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = KarmaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.KarmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Karma.app/Karma";
+			};
+			name = Release;
+		};
+		3D93A00821F8C23400EEACAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = KarmaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.KarmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Karma;
+			};
+			name = Debug;
+		};
+		3D93A00921F8C23400EEACAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NENDJWV6C;
+				INFOPLIST_FILE = KarmaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.betzsoftware.KarmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Karma;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D939FAA21F8C23000EEACAA /* Build configuration list for PBXProject "Karma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D939FF721F8C23400EEACAA /* Debug */,
+				3D939FF821F8C23400EEACAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D939FF921F8C23400EEACAA /* Build configuration list for PBXNativeTarget "Karma WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D939FFA21F8C23400EEACAA /* Debug */,
+				3D939FFB21F8C23400EEACAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D939FFD21F8C23400EEACAA /* Build configuration list for PBXNativeTarget "Karma WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D939FFE21F8C23400EEACAA /* Debug */,
+				3D939FFF21F8C23400EEACAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D93A00121F8C23400EEACAA /* Build configuration list for PBXNativeTarget "Karma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D93A00221F8C23400EEACAA /* Debug */,
+				3D93A00321F8C23400EEACAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D93A00421F8C23400EEACAA /* Build configuration list for PBXNativeTarget "KarmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D93A00521F8C23400EEACAA /* Debug */,
+				3D93A00621F8C23400EEACAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D93A00721F8C23400EEACAA /* Build configuration list for PBXNativeTarget "KarmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D93A00821F8C23400EEACAA /* Debug */,
+				3D93A00921F8C23400EEACAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D939FA721F8C23000EEACAA /* Project object */;
+}
