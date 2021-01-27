@@ -23,6 +23,7 @@
 		3D939FF021F8C23400EEACAA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FEF21F8C23400EEACAA /* NotificationController.swift */; };
 		3D939FF221F8C23400EEACAA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939FF121F8C23400EEACAA /* ComplicationController.swift */; };
 		3D939FF421F8C23400EEACAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D939FF321F8C23400EEACAA /* Assets.xcassets */; };
+		3D93A00C21F9625200EEACAA /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D93A00B21F9625200EEACAA /* PassKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		3D939FF321F8C23400EEACAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D939FF521F8C23400EEACAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D939FF621F8C23400EEACAA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3D93A00B21F9625200EEACAA /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D93A00C21F9625200EEACAA /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +153,7 @@
 				3D939FDB21F8C23300EEACAA /* Karma WatchKit App */,
 				3D939FEA21F8C23400EEACAA /* Karma WatchKit Extension */,
 				3D939FB021F8C23100EEACAA /* Products */,
+				3D93A00A21F9625100EEACAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +222,14 @@
 				3D939FF621F8C23400EEACAA /* PushNotificationPayload.apns */,
 			);
 			path = "Karma WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3D93A00A21F9625100EEACAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D93A00B21F9625200EEACAA /* PassKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
